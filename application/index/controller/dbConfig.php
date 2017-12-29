@@ -29,7 +29,13 @@ function initDB_M(){
 	Dzd  在自己的代码块上写上自己的名字注释
 	*/
 	
- 
+    /*
+		niu_ke_user :
+			u_id
+			user_name 用户名
+			user_pwd	密码
+			avatar	头像路径
+	*/
 	$result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_USER_M."'");
 	/* 自己的表先判断是否存在，不在则创建,并插入数据 */
 	if (mysqli_num_rows($result) == 0){
