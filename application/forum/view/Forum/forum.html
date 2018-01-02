@@ -1,0 +1,23 @@
+{include file="../application/index/view/header.html"}
+<div class="container">
+	<div>
+		<h2>论坛</h2>
+		<a href="{:url('publish')}" class="btn btn-success">发帖</a>
+<br>
+	</div>
+	<table class="table table-hover">
+		<tr>
+			<th>编号</th>
+			<th>贴子标题</th>
+			<th>操作</th>
+		</tr>
+		{foreach $post_list as $info}
+		<tr>
+			<td>{$info.post_id}</td>
+			<td>{$info.post_title}</td>
+			<td><a href="{:url('preview',['post_id'=>$info.post_id])}" class="btn btn-info" target="_blank">预览</a></td>
+		</tr>
+		{/foreach}
+	</table>
+</div>
+{include file="../application/index/view/footer.html"}

@@ -62,7 +62,7 @@ return [
     // 默认控制器名
     'default_controller'     => 'Index',
     // 默认操作名
-    'default_action'         => 'index',
+    'default_action'         => 'home',
     // 默认验证器
     'default_validate'       => '',
     // 默认的空控制器名
@@ -142,7 +142,9 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '_PUBLIC_' => '/niuke/public/'
+        '_PUBLIC_' => '/niuke/public/',
+		'_HEADER_' => '../application/index/view/header.html',
+		'_FOOTER_' => '../application/index/view/footer.html',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
