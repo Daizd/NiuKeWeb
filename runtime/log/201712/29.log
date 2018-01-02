@@ -1,0 +1,1680 @@
+---------------------------------------------------------------
+[ 2017-12-29T14:25:39+08:00 ] 0.0.0.0 GET //niuke/public/index/index/
+[ info ] localhost//niuke/public/index/index/ [运行时间：0.219289s][吞吐率：4.56req/s] [内存消耗：2,699.23kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T14:25:43+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/login.html
+[ info ] localhost/niuke/public/index/user_manage/login.html [运行时间：0.037580s][吞吐率：26.61req/s] [内存消耗：2,337.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->login[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T14:27:05+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.123838s][吞吐率：8.08req/s] [内存消耗：2,812.67kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T14:34:57+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.083812s][吞吐率：11.93req/s] [内存消耗：2,563.10kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T14:37:56+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.049843s][吞吐率：20.06req/s] [内存消耗：2,563.33kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:44+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.046602s][吞吐率：21.46req/s] [内存消耗：2,563.33kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:46+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.056531s][吞吐率：17.69req/s] [内存消耗：2,563.33kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.049936s][吞吐率：20.03req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.059395s][吞吐率：16.84req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.051864s][吞吐率：19.28req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.051449s][吞吐率：19.44req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.054148s][吞吐率：18.47req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:48+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.040017s][吞吐率：24.99req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:48+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.054684s][吞吐率：18.29req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:48+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.055023s][吞吐率：18.17req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:49+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.056048s][吞吐率：17.84req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:49+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.053468s][吞吐率：18.70req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:07:49+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.049303s][吞吐率：20.28req/s] [内存消耗：2,563.49kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:51+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.165434s][吞吐率：6.04req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:52+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.036410s][吞吐率：27.46req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:52+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.030079s][吞吐率：33.25req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:52+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.037620s][吞吐率：26.58req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:53+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.035309s][吞吐率：28.32req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:53+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.040603s][吞吐率：24.63req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:53+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.038599s][吞吐率：25.91req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:53+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.040631s][吞吐率：24.61req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:54+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.032976s][吞吐率：30.33req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:54+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.039677s][吞吐率：25.20req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:54+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.041040s][吞吐率：24.37req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:54+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.038459s][吞吐率：26.00req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:54+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.033777s][吞吐率：29.61req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:55+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.037373s][吞吐率：26.76req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:12:55+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.037957s][吞吐率：26.35req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:13:14+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.034602s][吞吐率：28.90req/s] [内存消耗：1,842.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T17:13:17+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.035218s][吞吐率：28.39req/s] [内存消耗：1,841.94kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function captcha_src()[D:\wamp64\www\niuke\runtime\temp\bb1884840bc5c56b539c8b2a0167da25.php:42]
+---------------------------------------------------------------
+[ 2017-12-29T19:40:03+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.070879s][吞吐率：14.11req/s] [内存消耗：2,202.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost//niuke/public/index/index/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:40:03+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html
+[ info ] localhost/niuke/public/captcha.html [运行时间：0.398100s][吞吐率：2.51req/s] [内存消耗：1,765.69kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:48:08+08:00 ] 0.0.0.0 POST /niuke/public/index/user_manage/doregister.html
+[ info ] localhost/niuke/public/index/user_manage/doregister.html [运行时间：0.226499s][吞吐率：4.42req/s] [内存消耗：3,122.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '594',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryEqtdRlTx4lFg6PdB',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '111',
+  'user_pwd' => '123456789',
+  'user_repwd' => '123456789',
+  'yzm' => 'iezzt',
+)
+[ info ] [ RUN ] app\index\controller\UserManage->doRegister[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001525s ] mysql:host=127.0.0.1;dbname=niu_ke_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `niu_ke_user` [ RunTime:0.001880s ]
+[ sql ] [ SQL ] SELECT `u_id` FROM `niu_ke_user` WHERE  `user_name` = '111' LIMIT 1 [ RunTime:0.024049s ]
+---------------------------------------------------------------
+[ 2017-12-29T19:48:53+08:00 ] 0.0.0.0 POST /niuke/public/index/user_manage/doregister.html
+[ info ] localhost/niuke/public/index/user_manage/doregister.html [运行时间：0.168421s][吞吐率：5.94req/s] [内存消耗：3,401.69kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '114161',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOBgJj9KYBF1yiG51',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '111',
+  'user_pwd' => '123456789',
+  'user_repwd' => '123456789',
+  'yzm' => 'iezzt',
+)
+[ info ] [ RUN ] app\index\controller\UserManage->doRegister[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\wamp64\www\niuke\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001592s ] mysql:host=127.0.0.1;dbname=niu_ke_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `niu_ke_user` [ RunTime:0.002075s ]
+[ sql ] [ SQL ] SELECT `u_id` FROM `niu_ke_user` WHERE  `user_name` = '111' LIMIT 1 [ RunTime:0.000877s ]
+---------------------------------------------------------------
+[ 2017-12-29T19:48:58+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html?0.697239735310254
+[ info ] localhost/niuke/public/captcha.html?0.697239735310254 [运行时间：0.032755s][吞吐率：30.53req/s] [内存消耗：1,765.73kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  '0_697239735310254' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:03+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html?0.697239735310254?0.8644065081187753
+[ info ] localhost/niuke/public/captcha.html?0.697239735310254?0.8644065081187753 [运行时间：0.032890s][吞吐率：30.40req/s] [内存消耗：1,765.94kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  '0_697239735310254?0_8644065081187753' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:05+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html?0.697239735310254?0.8644065081187753?0.564654184566584
+[ info ] localhost/niuke/public/captcha.html?0.697239735310254?0.8644065081187753?0.564654184566584 [运行时间：0.040055s][吞吐率：24.97req/s] [内存消耗：1,765.97kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  '0_697239735310254?0_8644065081187753?0_564654184566584' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:06+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html?0.697239735310254?0.8644065081187753?0.564654184566584?0.6541978162582267
+[ info ] localhost/niuke/public/captcha.html?0.697239735310254?0.8644065081187753?0.564654184566584?0.6541978162582267 [运行时间：0.031890s][吞吐率：31.36req/s] [内存消耗：1,766.53kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  '0_697239735310254?0_8644065081187753?0_564654184566584?0_6541978162582267' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:14+08:00 ] 0.0.0.0 POST /niuke/public/index/user_manage/doregister.html
+[ info ] localhost/niuke/public/index/user_manage/doregister.html [运行时间：0.163311s][吞吐率：6.12req/s] [内存消耗：3,264.47kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'doregister',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '114161',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOqWWAWMaxisPl6w5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '111',
+  'user_pwd' => '123456789',
+  'user_repwd' => '123456789',
+  'yzm' => 'qw6cn',
+)
+[ info ] [ RUN ] app\index\controller\UserManage->doRegister[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\wamp64\www\niuke\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001182s ] mysql:host=127.0.0.1;dbname=niu_ke_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `niu_ke_user` [ RunTime:0.001339s ]
+[ sql ] [ SQL ] SELECT `u_id` FROM `niu_ke_user` WHERE  `user_name` = '111' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] INSERT INTO `niu_ke_user` (`user_name` , `user_pwd` , `avatar`) VALUES ('111' , '123456789' , '20171229\\6189c93f0c8e710c50a280e1e308dce2.jpg') [ RunTime:0.052246s ]
+---------------------------------------------------------------
+[ 2017-12-29T19:49:18+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/register.html
+[ info ] localhost/niuke/public/index/user_manage/register.html [运行时间：0.047541s][吞吐率：21.03req/s] [内存消耗：2,202.38kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/doregister.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->register[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\register.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:18+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html
+[ info ] localhost/niuke/public/captcha.html [运行时间：0.050639s][吞吐率：19.75req/s] [内存消耗：1,765.69kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:31+08:00 ] 0.0.0.0 GET /niuke/public/captcha.html
+[ info ] localhost/niuke/public/captcha.html [运行时间：0.060222s][吞吐率：16.61req/s] [内存消耗：1,765.84kb] [文件加载：37]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index/user_manage/register.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\niuke\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:39+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/login.html
+[ info ] localhost/niuke/public/index/user_manage/login.html [运行时间：0.045062s][吞吐率：22.19req/s] [内存消耗：2,122.19kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->login[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:45+08:00 ] 0.0.0.0 GET /niuke/public/index
+[ info ] localhost/niuke/public/index [运行时间：0.114663s][吞吐率：8.72req/s] [内存消耗：2,202.38kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-29T19:49:47+08:00 ] 0.0.0.0 GET /niuke/public/index/user_manage/login.html
+[ info ] localhost/niuke/public/index/user_manage/login.html [运行时间：0.080136s][吞吐率：12.48req/s] [内存消耗：2,122.72kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user_manage',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/niuke/public/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\UserManage->login[ D:\wamp64\www\niuke\application\index\controller\UserManage.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\user_manage\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

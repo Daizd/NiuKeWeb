@@ -1,0 +1,134 @@
+.body{
+    background-color: #f6f6f6;
+    height: auto;
+}
+.header{
+    height: 50px;
+}
+.brand{
+    width:200px;
+}
+.navbar-header .icon{
+    background: url("http://www.jcodecraeer.com/templets/jcodecraeer/images/logo.png?v=1.0") no-repeat;
+    width: 100%;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.search_bar{
+    width: 250px;
+    margin: 10px 5px;
+}
+.search_bar .in_search{
+    height: 30px;
+    border-radius: 15px;
+}
+.search_bar .search_icon{
+    background-color:white;
+    width: 35px;
+    color: #333;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.search_bar .search_icon:hover{
+    cursor: pointer;
+}
+.nav .no_login{
+    display: block;
+}
+.nav .have_login{
+    display: none;
+}
+.ul_bar li{
+    float: left;
+    list-style: none;
+    color: #9d9d9d;
+}
+.ul_bar li a{
+    line-height: 20px;
+    color: #9d9d9d;
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    text-decoration-line: none;
+}
+.ul_bar li a:hover{
+    color: white;
+}
+.user_icon{
+    height: 45px;
+    width: 45px;
+    margin-top: 3px;
+    border-radius: 30px;
+}
+.user_icon:hover{
+    cursor: pointer;
+}
+.img_hover{
+    display: none;
+    background: #222222;
+    color: #888;
+    width: 120px;
+    position: absolute;
+    right: 0px;
+}
+.img_hover li{
+    list-style: none;
+    padding: 8px 10px;
+}
+.img_hover li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.footer{
+    clear: both;
+    overflow: hidden;
+    height: auto;
+    background: #222222;
+    color: #888;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.col-md-4 p:hover{
+    cursor: pointer;
+    color: #00B091;
+}
+.footer .ad_title{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+.footer .footer_btn{
+    float: right;
+    background-color: #00B091;
+    border-radius: 5px;
+    padding: 2px 20px;
+}
+.footer .v_code{
+    height: 120px;
+    width: 120px;
+    border: #3c3c3c solid 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.footer .scan{
+    margin-left: 30px;
+    padding-top: 15px;
+}
+.footer .main_link{
+    margin-top: 20px;
+    border-left: #3c3c3c solid 2px;
+    padding-left: 20px;
+    height: auto;
+}
+.footer .main_link .link_list li{
+    list-style: none;
+    width: 24%;
+    float: left;
+    padding-top: 10px;
+}
+.footer .main_link .link_list li:hover{
+    color: #00B091;
+    cursor: pointer;
+}

@@ -1,0 +1,466 @@
+---------------------------------------------------------------
+[ 2017-12-31T10:46:24+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.365612s][吞吐率：2.74req/s] [内存消耗：3,139.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003223s ] mysql:host=127.0.0.1;dbname=niu_ke_db;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'niu_ke_db.article' doesn't exist[D:\wamp64\www\niuke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-31T10:47:50+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.097123s][吞吐率：10.30req/s] [内存消耗：2,364.82kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: article_list[D:\wamp64\www\niuke\runtime\temp\69fb4b918418b15aceaf718234f15dc0.php:136]
+---------------------------------------------------------------
+[ 2017-12-31T10:49:22+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.052547s][吞吐率：19.03req/s] [内存消耗：2,358.56kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板标签错误:for[D:\wamp64\www\niuke\thinkphp\library\think\template\TagLib.php:275]
+---------------------------------------------------------------
+[ 2017-12-31T10:50:11+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.056102s][吞吐率：17.82req/s] [内存消耗：2,367.90kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'to' (T_STRING)[D:\wamp64\www\niuke\runtime\temp\69fb4b918418b15aceaf718234f15dc0.php:136]
+---------------------------------------------------------------
+[ 2017-12-31T10:50:30+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.043982s][吞吐率：22.74req/s] [内存消耗：2,368.41kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: article_list[D:\wamp64\www\niuke\runtime\temp\69fb4b918418b15aceaf718234f15dc0.php:136]
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.046314s][吞吐率：21.59req/s] [内存消耗：2,316.11kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/library/fontasome/css/font-awesome.min.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/library/fontasome/css/font-awesome.min.css [运行时间：0.088732s][吞吐率：11.27req/s] [内存消耗：2,162.18kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'library',
+  'fontasome' => 'css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/index/css/home.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/index/css/home.css [运行时间：0.082217s][吞吐率：12.16req/s] [内存消耗：2,162.13kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'index',
+  'css' => 'home.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/index/css/common.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/index/css/common.css [运行时间：0.109596s][吞吐率：9.12req/s] [内存消耗：2,162.13kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'index',
+  'css' => 'common.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/library/bootstrap/css/bootstrap.min.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/library/bootstrap/css/bootstrap.min.css [运行时间：0.146385s][吞吐率：6.83req/s] [内存消耗：2,162.18kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'library',
+  'bootstrap' => 'css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/library/jquery/jquery-3.2.1.min.js
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/library/jquery/jquery-3.2.1.min.js [运行时间：0.147097s][吞吐率：6.80req/s] [内存消耗：2,162.17kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'library',
+  'jquery' => 'jquery-3.2.1.min.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/library/bootstrap/js/bootstrap.min.js
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/library/bootstrap/js/bootstrap.min.js [运行时间：0.051304s][吞吐率：19.49req/s] [内存消耗：2,162.16kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'library',
+  'bootstrap' => 'js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/library/fontasome/css/font-awesome.min.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/library/fontasome/css/font-awesome.min.css [运行时间：0.045604s][吞吐率：21.93req/s] [内存消耗：2,162.18kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'library',
+  'fontasome' => 'css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/index/css/home.css
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/index/css/home.css [运行时间：0.046576s][吞吐率：21.47req/s] [内存消耗：2,162.13kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'index',
+  'css' => 'home.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:50:46+08:00 ] 0.0.0.0 GET /niuke/public/index/index/_PUBLIC_/static/index/js/home.js
+[ info ] localhost/niuke/public/index/index/_PUBLIC_/static/index/js/home.js [运行时间：0.047550s][吞吐率：21.03req/s] [内存消耗：2,162.11kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => '_PUBLIC_',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/niuke/public/index/index/home',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+  'static' => 'index',
+  'js' => 'home.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-31T10:52:28+08:00 ] 0.0.0.0 GET /niuke/public/index/index/home
+[ info ] localhost/niuke/public/index/index/home [运行时间：0.035013s][吞吐率：28.56req/s] [内存消耗：2,115.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\niuke\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.2092031121.1506342178; PHPSESSID=rj2hqjr38kbnjrp1i7bs2dtt06; Phpstorm-412f56be=dd1aa3ff-b832-4592-920c-f2c60143db88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->home[ D:\wamp64\www\niuke\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\niuke\public/../application/index\view\index\home.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
