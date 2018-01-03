@@ -1,73 +1,65 @@
-<html>
-	<head>
-		<style>
-			.box {
-				margin:auto;
-			}
+{include file="../application/index/view/header.html"}
+<div text-align=margin>
+	<div class = "box" style="margin: 0 auto;margin-top: 50px;margin-bottom: 50px;width:400px;">
+		<form action = "{:url('doRegister')}" onsubmit="return check()" enctype="multipart/form-data" method="post">
+			<!-- <div style="text-align:center"> -->
+				<!-- <img  id="show" style = "height:100px;width:100px;margin:auto;"/> -->
+			<!-- </div> -->
+			<div style = "height:100px;width:400px;">
+				<img  id="show" style = "height:100px;width:100px;margin:auto;float:right"/>
+				<div style = "width:calc(100% - 100px);height:100px;float:left;position:relative;">
+					<input type="file" name="avatar" id="avatar" onchange="avatarChange()" 
+					style = "position: absolute;bottom: calc(50% - 13px); " />
+				</div>
+			</div>
+			<div class="form-group " style="margin-top: 30px;">
+				<label>用户名</label>
+				<input type = "text" name = "user_name" id = "user_name" class="form-control"></input>
+			</div class="form-group">
+			<div class="form-group">
+				<label>密码</label>
+				<input type = "password" name = "user_pwd" id = "pwd" class="form-control"></input>
+			</div class="form-group">
+			<div class="form-group">
+				<label>重复密码</label>
+				<input type = "password" name = "user_repwd" id = "repwd" class="form-control"></input>
+			</div>
+			<div class="form-group">
+				<label>验证码</label>
+				<div><img class="yzm_img" src="{:captcha_src()}" alt="captcha" onclick="this.src=this.src+'?'+Math.random()" /></div>
+				<label>输入验证码</label>
+				<input type = "text" name = "yzm" class="form-control"></input>
+			</div>
+			<div style = "text-align:center">
+				<button type = "submit" style = "width:30%">注册</button>
+			</div>
 			
-			form {
-				line-height:50px;
-				height:200px;
-				width:300px;
-				margin:auto;
+		</form>
+		<script type="text/javascript">
+			function avatarChange () {
+				var r= new FileReader();
+				f=document.getElementById('avatar').files[0];
+				r.readAsDataURL(f);
+				r.onload=function  (e) {
+					document.getElementById('show').src=this.result;
+				};
 			}
-			
-			#show {
-				line-height:50px;
-				height:100px;
-				width:100px;
-				margin:auto;
+			function check() {
+				var uname = document.getElementById("user_name").value
+				var pwd = document.getElementById("pwd").value
+				var repwd = document.getElementById("repwd").value
+				if (pwd == '' || uname==' ') {
+					alert('信息不完整')
+					return false
+				}
+				else if (pwd != repwd) {
+					alert('密码和重复密码不一样！')
+					return false;
+				}else{
+					return true;
+				}
 			}
-		</style>
-	</head>
-	<div class = "box">
-	<form action = "{:url('doRegister')}" onsubmit="return check()" enctype="multipart/form-data" method="post">
-		<img  id="show"/>
-		<input type="file" name="avatar" id="avatar" onchange="avatarChange()" /> <br> 
-		<div>
-			<label>用户名</label>
-			<input type = "text" name = "user_name" id = "user_name"></input>
-		</div>
-		<div>
-			<label>密码</label>
-			<input type = "text" name = "user_pwd" id = "pwd"></input>
-		</div>
-		<div>
-			<label>重复密码</label>
-			<input type = "text" name = "user_repwd" id = "repwd"></input>
-		</div>
-		<div>
-			<label>验证码</label>
-			<div><img class="yzm_img" src="{:captcha_src()}" alt="captcha" onclick="this.src=this.src+'?'+Math.random()" /></div>
-			<label>输入验证码</label>
-			<input type = "text" name = "yzm"></input>
-		</div>
-		<button type = "submit">注册</button>
-	</form>
-	<script type="text/javascript">
-		function avatarChange () {
-			var r= new FileReader();
-			f=document.getElementById('avatar').files[0];
-			r.readAsDataURL(f);
-			r.onload=function  (e) {
-				document.getElementById('show').src=this.result;
-			};
-		}
-		function check() {
-			var uname = document.getElementById("user_name").value
-			var pwd = document.getElementById("pwd").value
-			var repwd = document.getElementById("repwd").value
-			if (pwd == '' || uname==' ') {
-				alert('信息不完整')
-				return false
-			}
-			else if (pwd != repwd) {
-				alert('密码和重复密码不一样！')
-				return false;
-			}else{
-				return true;
-			}
-		}
-	</script>
+		</script>
 	</div>
-</html>
+</div>
+{include file="../application/index/view/footer.html"}

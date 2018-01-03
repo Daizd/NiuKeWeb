@@ -8,9 +8,14 @@
 			<label >帖子标题</label>
 			<input type="text" name="post_title" class="form-control">
 		</div>
-		<div class="form-group">
-			<label >类型</label>
-			<input type="text" name="post_column" class="form-control">
+		<div class="form-group" style="height:30px">
+			<label >新闻分类</label>
+			<select name="post_cat_id" style="height:100%">
+				<option value="">请选择</option>
+				{foreach $post_cat_lists as $info}
+				<option value="{$info.cat_id}">{$info.cat_name}</option>
+				{/foreach}
+			</select>
 		</div>
 		<div class="form-group">
 			<label >帖子内容</label>
