@@ -8,6 +8,7 @@ define("DB_NAME_M", "niu_ke_db");//数据库
 define("TABLE_USER_M", "niu_ke_user");//用户表，表要带前缀niu_ke_
 define("TABLE_POST_M", "niu_ke_post");//帖子表，
 define("TABLE_POST_CATEGORY_M", "niu_ke_post_category");//帖子类别表，
+define("TABLE_COURSE_M", "niu_ke_course");//课程类别表，
 
 function initDB_M(){
 	$con = mysqli_connect(DB_HOST_M, DB_USER_NAME_M, DB_USER_PWD_M); 
@@ -60,7 +61,45 @@ function initDB_M(){
 			die (TABLE_USER_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
 	}
-	
+
+
+	$result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_COURSE_M."'");
+	/* 自己的表先判断是否存在，不在则创建,并插入数据 */
+	if (mysqli_num_rows($result) == 0){
+		$sql = "CREATE TABLE " . TABLE_COURSE_M .
+		"(
+			c_id int PRIMARY KEY AUTO_INCREMENT,
+			course_name varchar(20) NOT NULL,
+			course_teacher varchar(20),
+			course_thumb varchar(255),
+			course_content varchar(255),
+			c_create_time int(11)
+		)";
+		if (mysqli_query($con, $sql)){
+			echo "数据表 ". TABLE_COURSE_M ." 创建成功<br/>";
+		} else {
+			echo "创建数据表". TABLE_COURSE_M ."错误: " . mysqli_error($con)."<br/>";  
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) 
+		VALUE('java', 'TOM','java从入门到放弃', 2017)" );
+		if (!$result){
+			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+        $result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) VALUE('c++', 'KITTY','c++从入门到转行',2017)" );
+        if (!$result){
+			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) VALUE('php', 'TONY','php从入门到脱发',2017)" );
+		if (!$result){
+			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		
+
+		
+	}
+
+
+
 	$result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_POST_CATEGORY_M."'");
 	if (mysqli_num_rows($result) == 0){
 		$sql = "CREATE TABLE " . TABLE_POST_CATEGORY_M .

@@ -17,3 +17,20 @@
 .course_section{
     background-color: white;
 }
+.content_list li{
+    list-style: none;
+}
+.chapter_detail{
+    color: #999;
+}
+.course_header{
+
+    color: orangered;
+}
+.recommend_img{
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
