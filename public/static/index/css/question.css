@@ -1,0 +1,60 @@
+/*题库的样式文件*/
+.company_list li{
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+.position{
+    padding: 5px;
+}
+.position:hover{
+    color: orangered;
+}
+.queueList{
+    padding: 15px;
+}
+
+.question_title{
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+.queueList li{
+    margin-top: 30px;
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-right: 2%;
+    border: #999 solid 1px;
+    width: 18%;
+    text-align: center;
+}
+.question_img{
+
+    margin-top: 30px;
+    height: 80px;
+    width: 80px;
+}
+.heat{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.check{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #00B091;
+}
+.check .total{
+    font-size: 18px;
+
+}
+.check .check_btn{
+    background-color: #00B091;
+}
