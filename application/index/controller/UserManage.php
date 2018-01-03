@@ -58,15 +58,25 @@ class UserManage extends \think\Controller
 		if($file){
 			$info = $file->validate(['ext'=>'jpg,png','size'=>2*1024*1024])->move('../../uploads');
 			if(!$info){
-				$this->error ("文件仅支持jpg,png。且不能大于5M");
+				$this->error ("头像仅支持jpg,png。且不能大于5M");
 			}
 			$data['avatar'] = $info->getSaveName();
 		} else {
-			die ('没有获取到头像');
+			$this->error ('请上传头像仅支持jpg,png。且不能大于5M');
 		}
 		unset($data['yzm']);//验证码不需要,释放掉
 		unset($data['user_repwd']);
 		db('user')->insert($data);
-        $this->success('注册成功','userManage/login');
+		
+		$userName = $data['user_name'];
+		$info =  db('user')
+					->where("user_name='$userName'")
+					->find();
+        if (empty($info)) {
+            $this->error('自动登录失败！');
+        }else{
+            Session::set('uinfo',$info);
+            $this->success('已经自动登录', 'index/home');
+        }
 	}
 }
