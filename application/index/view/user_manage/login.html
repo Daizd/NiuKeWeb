@@ -1,0 +1,34 @@
+{include file="../application/index/view/header.html"}
+	<div class = "box" style="margin: 0 auto;margin-top: 50px;margin-bottom: 50px;width:400px;">
+		<form action="{:url('doLogin')}" class="form" onsubmit="return check()" 
+			style="width:400px">
+			<div class="form-group">
+				<label >用户名</label>
+				<input type="text" class="form-control" name="user_name" style="background-color:white;">
+			</div>
+			<div class="form-group">
+				<label >密码</label>
+				<input type="password" class="form-control pwd" name="user_pwd" >
+			</div>
+	
+			<div class="form-group">
+				<input type="submit" class="btn btn-success"  value="登录">
+			</div>
+
+		</form>
+	</div>
+	<script type="text/javascript">
+		function check() {
+			var uname = $('[name="user_name"').val()
+			var pwd = $('.pwd').val()
+			// alert(pwd)
+			if (pwd == '' || uname=='') {
+				alert('信息不完整')
+				return false
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+{include file="../application/index/view/footer.html"}

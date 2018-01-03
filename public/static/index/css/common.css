@@ -36,12 +36,6 @@
 .search_bar .search_icon:hover{
     cursor: pointer;
 }
-.nav .no_login{
-    display: block;
-}
-.nav .have_login{
-    display: none;
-}
 .ul_bar li{
     float: left;
     list-style: none;

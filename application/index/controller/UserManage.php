@@ -1,12 +1,28 @@
 <?php
 namespace app\index\controller;
 use \think\captcha\Captcha;
+use \think\Session;
 
 class UserManage extends \think\Controller
 {
     public function login()
     {
         return $this->fetch();
+	}
+	
+	public function doLogin()
+    {
+        $user_name  = input('user_name');
+        $user_pwd  = input('user_pwd');
+        //查询用户表有没有这些信息的用户
+		$info =  db('user')->where("user_name='$user_name' and user_pwd='$user_pwd'")->find();
+        if (empty($info)) {
+            $this->error('用户名或密码不正确！');
+        }else{
+            Session::set('uinfo',$info);
+            $this->success('欢迎登录', 'index/home');
+
+        }
 	}
 	
 	public function register(){
@@ -43,6 +59,6 @@ class UserManage extends \think\Controller
 		unset($data['yzm']);//验证码不需要,释放掉
 		unset($data['user_repwd']);
 		db('user')->insert($data);
-        $this->success('注册成功');
+        $this->success('注册成功','index/home');
 	}
 }

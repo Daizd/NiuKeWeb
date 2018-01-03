@@ -6,6 +6,7 @@ class Forum extends \think\Controller
 {
     public function forum()
     {	
+	
 		$list = db('post')
 				->alias('p')
 				->field('p.post_id, p.post_title, c.cat_name')
