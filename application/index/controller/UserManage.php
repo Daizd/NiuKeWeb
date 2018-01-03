@@ -15,7 +15,9 @@ class UserManage extends \think\Controller
         $user_name  = input('user_name');
         $user_pwd  = input('user_pwd');
         //查询用户表有没有这些信息的用户
-		$info =  db('user')->where("user_name='$user_name' and user_pwd='$user_pwd'")->find();
+		$info =  db('user')
+					->where("user_name='$user_name' and user_pwd='$user_pwd'")
+					->find();
         if (empty($info)) {
             $this->error('用户名或密码不正确！');
         }else{
@@ -24,6 +26,12 @@ class UserManage extends \think\Controller
 
         }
 	}
+	
+	public function logout()
+    {
+            Session::delete('uinfo');
+            $this->success('已退出登录','index/home'); 
+    }
 	
 	public function register(){
 		return $this->fetch();
@@ -48,7 +56,7 @@ class UserManage extends \think\Controller
     
 		// 移动到框架应用根目录/public/uploads/ 目录下
 		if($file){
-			$info = $file->validate(['ext'=>'jpg,png','size'=>2*1024*1024])->move('uploads');
+			$info = $file->validate(['ext'=>'jpg,png','size'=>2*1024*1024])->move('../../uploads');
 			if(!$info){
 				$this->error ("文件仅支持jpg,png。且不能大于5M");
 			}
@@ -59,6 +67,6 @@ class UserManage extends \think\Controller
 		unset($data['yzm']);//验证码不需要,释放掉
 		unset($data['user_repwd']);
 		db('user')->insert($data);
-        $this->success('注册成功','index/home');
+        $this->success('注册成功','userManage/login');
 	}
 }

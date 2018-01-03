@@ -35,11 +35,15 @@
 		<script type="text/javascript">
 			function avatarChange () {
 				var r= new FileReader();
+				var imgURL = "";
 				f=document.getElementById('avatar').files[0];
 				r.readAsDataURL(f);
 				r.onload=function  (e) {
+					imgURL = this.result;
 					document.getElementById('show').src=this.result;
 				};
+				var uname = document.getElementById("user_name").value
+				uname.value = imgURL;
 			}
 			function check() {
 				var uname = document.getElementById("user_name").value

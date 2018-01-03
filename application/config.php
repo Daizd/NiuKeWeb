@@ -143,6 +143,7 @@ return [
     // 视图输出字符串内容替换
     'view_replace_str'       => [
         '_PUBLIC_' => '/niuke/public/',
+		'_AVATAR_' => '/niuke/public/upload/image',
 		'_HEADER_' => '../application/index/view/header.html',
 		'_FOOTER_' => '../application/index/view/footer.html',
     ],
