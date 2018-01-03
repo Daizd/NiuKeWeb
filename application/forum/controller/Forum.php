@@ -37,6 +37,12 @@ class Forum extends \think\Controller
 	
 	public function preview(){
 		$post_id = input('post_id');
+		
+		$data = db('post')->field('post_heat')
+								-> where("post_id = ".$post_id)
+								->find();
+		db('post')-> where("post_id", $post_id)
+					->update(['post_heat'=>$data['post_heat']+1]);
 		$info = db('post')->where("post_id = ".$post_id)->find();
 		$this->assign('info',$info);
         return $this->fetch();
