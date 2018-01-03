@@ -85,6 +85,11 @@
 </section>
 
 <script type="text/javascript">
+	<!-- 元素加载完后加载头像 -->
+	var img_avatar = document.getElementById("avatar");
+	var avatarPath = "{:session('uinfo.avatar')}"
+	img_avatar.src = "http://localhost/uploads/" + avatarPath;
+	
 	
 	$('#logout').click(function () {
 		console.log("2222");
