@@ -135,3 +135,121 @@
     color: orangered;
     text-decoration: none;
 }
+/*文章模块*/
+.article_section{
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 0px -5px 5px 2px rgba(7,17,27,.06);
+}
+.article_section .heat_article{
+    margin-top: 30px;
+}
+.article_section .article_list{
+    width: 100%;
+    padding-right: 10px;
+    border-right: #ebe0ef solid 1px;
+}
+.article_section .article_list>li{
+    list-style: none;
+    margin-top: 20px;
+    height: 130px;
+}
+.article_section .article_list .img{
+    height: 130px;
+    width: 200px;
+    float: left;
+}
+.article_section .article_list .article_description{
+    float: right;
+    width: calc(100% - 220px);
+}
+.article_section .article_list  .article_description .article_title{
+    text-decoration:none;
+    color: black;
+    font-size: 18px;
+}
+.article_section .article_list  .article_description .article_title:hover{
+    color: orangered;
+}
+.article_section .article_list  .article_description .article{
+    margin-top: 10px;
+    line-height: 24px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 90px;
+    transition: all .3s;
+}
+.article_description .list_msg{
+
+}
+
+.article_description .list_msg .list-user{
+    float: left;
+    color: #999;
+    text-decoration: none;
+    list-style: none;
+}
+.article_description .list_msg .list-user a,span{
+    color: #999;
+}
+
+.article_description .list_msg .list-msg{
+    color: #999;
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+.glyphicon-class{
+
+    padding-right: 20px;
+}
+.article_description .list_msg .update_time{
+    color: #999;
+    float: right;
+    list-style: none;
+}
+.comment_list{
+    list-style: none;
+    height: auto;
+    clear: both;
+    padding-top: 15px;
+}
+.comment_list .img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.comment_list .comment_rightBox{
+    float: right;
+    width: calc(100% - 50px);
+}
+.comment_list .comment_rightBox .user_name{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.comment_list .comment_rightBox .user_name:hover{
+    color: orangered;
+}
+.comment_list .comment_rightBox .comment{
+    color: #6c6c6c;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    transition: all .3s;
+}
+.comment_list .comment_rightBox .list-msg{
+    list-style: none;
+    float: left;
+}
+.comment_list .comment_rightBox .update_time{
+    list-style: none;
+    float: right;
+}
