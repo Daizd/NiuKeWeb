@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>猪客网</title>
+    <title>E客网</title>
     <script type="text/javascript" src="_PUBLIC_/static/library/jquery/jquery-3.2.1.min.js"></script>
 
     <link rel="stylesheet" href="_PUBLIC_/static/library/bootstrap/css/bootstrap.min.css">
@@ -26,17 +26,17 @@
         <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
         <div class="container">
             <div class="navbar-header brand">
-                <a class="navbar-brand icon" href="#">泡在云上的日子</a>
+                <a class="navbar-brand icon" href="#">E客网</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{:url('../public/index/index/home')}">首页</a></li>
-                    <li><a href="#">题库</a></li>
-                    <li><a href="#">课程</a></li>
-                    <li><a href="#">求职</a></li>
-                    <li><a href="#">IT</a></li>
-                    <li><a href="{:url('../public/forum/forum/forum')}">讨论区</a></li>
+                    <li id= "home" class="navbar_li"><a href="{:url('../public/index/index/home')}">首页</a></li>
+                    <li id="questionBank" class="navbar_li"><a href="#" >题库</a></li>
+                    <li id="course" class="navbar_li"><a href="#">课程</a></li>
+                    <li id="job" class="navbar_li"><a href="#">求职</a></li>
+                    <li id="it" class="navbar_li"><a href="#">IT</a></li>
+                    <li id="forum" class="navbar_li"><a href="{:url('../public/forum/forum/forum')}">讨论区</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
