@@ -2,11 +2,7 @@ body{
   font-family: 'Arimo', sans-serif;
   background: #fff;
 }
-/*-- header --*/
-.header {
-	padding:2.2em 0;
-	background: #bd9260;
-}
+
 
 span.menu{
 	display:none;

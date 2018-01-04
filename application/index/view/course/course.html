@@ -15,16 +15,21 @@
 			<th>开课时间</th>
 			<th>操作</th>
 		</tr>
+
 		{foreach $course_list as $info}
+
 		<tr>
 			<td>{$info.c_id}</td>
 			<td><img src="http://localhost/niuke/public/uploads/20180103/19ab2c729677e6a753013b1dd566fa2c.jpg" width="200px" height="144px"></td>
 			<td>{$info.course_name}</td>
 			<td>{$info.course_teacher}</td>
 			<td>{$info.c_create_time}</td>
+
+			<script src="_PUBLIC_/static/index/js/question.js" type="text/javascript"></script>
 			<td><a href="{:url('../public/index/course_java/coursejava')}" class="btn btn-info" target="_blank">进入课程</a></td>
 		</tr>
 		{/foreach}
+		</for>
 	</table>
 </div>
 {include file="footer"}

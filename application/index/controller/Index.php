@@ -21,6 +21,9 @@ class Index extends \think\Controller
         $heatArticleList = $article->query("select * from niu_ke_post order by post_heat DESC limit 3");
         $this->assign('heat_article_list',$heatArticleList);
 
+        //热门课程
+        $course = db('course')->select();
+        $this->assign('course_list',$course);
 
         return $this->fetch();
     }

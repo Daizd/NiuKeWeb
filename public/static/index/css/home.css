@@ -129,6 +129,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     max-height: 46px;
+    min-height: 46px;
     transition: all .3s;
 }
 .class_list .class_description:hover{

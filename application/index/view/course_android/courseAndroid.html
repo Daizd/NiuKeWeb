@@ -10,7 +10,7 @@ function hideURLbar() {
     window.scrollTo(0, 1);
 }
 </script>
-<script type = "text/javascript"src = "_PUBLIC_/static/android/js/move-top.js" ></script>
+<script type="text/javascript" src="_PUBLIC_/static/android/js/move-top.js"></script>
 <script type="text/javascript" src="_PUBLIC_/static/android/js/easing.js"></script>
 
 <script type="text/javascript">
@@ -22,26 +22,10 @@ function hideURLbar() {
     });
 </script>
 
-<link href='https://fonts.googleapis.com/ css?family=Arimo:400,700,400italic,700italic' rel='stylesheet'
-      type='text/css'>
-<link href='https://fonts.googleapis.com/ css?family=Oswald:400,300,700|Open+Sans:400italic,600italic,400,300,600,700,800'
-      rel='stylesheet' type='text/css'>
-
 
 <div class="main">
     <div class="header">
         <div class="container">
-
-            <div class="top-nav">
-                <span class="menu"> </span>
-                <ul>
-                    <li class="active"><a href="index.html">关于我们</a></li>
-                    <li><a href="donate.html">我们的课程</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                    <div class="clearfix"></div>
-                </ul>
-            </div>
-
             <div class="search-box">
                 <div id="sb-search" class="sb-search">
                     <form>
@@ -53,8 +37,8 @@ function hideURLbar() {
                 </div>
             </div>
 
-            <script src="_PUBLIC_/static/android/js/classie.js"></script>
-            <script src="_PUBLIC_/static/android/js/uisearch.js"></script>
+            <script src="_PUBLIC_static/android/js/classie.js"></script>
+            <script src="_PUBLIC_static/android/js/uisearch.js"></script>
             <script>
                 new UISearch(document.getElementById('sb-search'));
             </script>
@@ -101,20 +85,19 @@ function hideURLbar() {
 <div class="Stories-section">
     <div class="container">
         <div class="ad728x90" style="text-align:center">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
             <ins class="adsbygoogle"
                  style="display:inline-block;width:728px;height:90px"
                  data-ad-client="ca-pub-9153409599391170"
                  data-ad-slot="8639520288"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+
         </div>
 
         <table>
             <tr>
                 <p>
-                    <img src="_PUBLIC_/static/android/images/1.jpg"><img src="_PUBLIC_/static/android/images/4.jpg"><img src="_PUBLIC_/static/android/images/3.jpg">
+                    <img src="_PUBLIC_/static/android/images/1.jpg"><img src="_PUBLIC_/static/android/images/4.jpg"><img
+                        src="_PUBLIC_/static/android/images/3.jpg">
                 </p>
             </tr>
         </table>
@@ -125,19 +108,19 @@ function hideURLbar() {
 <div class="parts-section">
     <div class="container">
         <div class="ad728x90" style="text-align:center">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
             <ins class="adsbygoogle"
                  style="display:inline-block;width:728px;height:90px"
                  data-ad-client="ca-pub-9153409599391170"
                  data-ad-slot="8639520288"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
         <table>
             <tr>
                 <p>
-                    <img src="_PUBLIC_/static/android/images/10.jpg"><img src="_PUBLIC_/static/android/images/11.jpg"><img src="_PUBLIC_/static/android/images/12.jpg"><img src="_PUBLIC_/static/android/images/13.jpg"><img
+                    <img src="_PUBLIC_/static/android/images/10.jpg"><img
+                        src="_PUBLIC_/static/android/images/11.jpg"><img
+                        src="_PUBLIC_/static/android/images/12.jpg"><img
+                        src="_PUBLIC_/static/android/images/13.jpg"><img
                         src="_PUBLIC_/static/android/images/14.jpg">
                 </p>
             </tr>
@@ -146,18 +129,12 @@ function hideURLbar() {
         <div class="clearfix"></div>
     </div>
 </div>
-</div>
-<div id="gallery" class="Gallery">
-    <div class="container">
-        <div class="ad728x90" style="text-align:center">
 
-        </div>
+{include file="footer"}
 
-</div>
-</div>
-        {include file="footer"}
-        <script>
-            //导航栏的选中显示，请修改下面的这行代码，在自己负责的页面部分，写入响应的id
-            $('#home').addClass("active");
+<!--请在你写的html末尾加上下面这个script,并且修改响应的id-->
+<script>
+    //导航栏的选中显示，请修改下面的这行代码，在自己负责的页面部分，写入响应的id
+    $('#home').addClass("active");
 
-        </script>
+</script>

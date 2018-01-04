@@ -75,6 +75,7 @@
             <em>程</em>
             <span class="tit-icon icon-new-r tit-icon-r"></span>
         </h3>
+
         <ul class="class_list">
             <li class="class_li">
                 <a href="{:url('../public/index/course_detail/courseDetail')}" class="a_div">
@@ -83,29 +84,20 @@
                 </a>
             </li>
             <li class="class_li">
-                <a href="" class="a_div">
+                <a href="{:url('../public/index/course_detail/courseDetail')}" class="a_div">
                     <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="class_img">
-                    <p class="class_description">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</p>
+                    <p class="class_description">Redis分布式Java企业级电商项目架构演进之路  </p>
                 </a>
             </li>
+            {foreach $course_list as $info}
+
             <li class="class_li">
-                <a href="" class="a_div">
+                <a href="{:url('../public/index/course_detail/courseDetail')}" class="a_div">
                     <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="class_img">
-                    <p class="class_description">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</p>
+                    <p class="class_description">{$info.course_content}</p>
                 </a>
             </li>
-            <li class="class_li">
-                <a href="" class="a_div">
-                    <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="class_img">
-                    <p class="class_description">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</p>
-                </a>
-            </li>
-            <li class="class_li">
-                <a href="" class="a_div">
-                    <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="class_img">
-                    <p class="class_description">Java企业级电商项目架构演进之路  Tomcat集群与Redis分布式</p>
-                </a>
-            </li>
+            {/foreach}
         </ul>
     </div>
 </div>
