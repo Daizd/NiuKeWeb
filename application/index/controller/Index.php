@@ -18,7 +18,7 @@ class Index extends \think\Controller
         $this->assign('recommend_article_list',$articleList);
 
         //热门文章
-        $heatArticleList = $article->query("select * from niu_ke_post order by post_heat limit 3");
+        $heatArticleList = $article->query("select * from niu_ke_post order by post_heat DESC limit 3");
         $this->assign('heat_article_list',$heatArticleList);
 
 

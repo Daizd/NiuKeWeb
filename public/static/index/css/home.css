@@ -154,6 +154,7 @@
     list-style: none;
     margin-top: 20px;
     height: 130px;
+    position: relative;
 }
 .article_section .article_list .img{
     height: 130px;
@@ -185,7 +186,8 @@
     transition: all .3s;
 }
 .article_description .list_msg{
-
+    position: absolute;
+    bottom: 0;
 }
 
 .article_description .list_msg .list-user{
