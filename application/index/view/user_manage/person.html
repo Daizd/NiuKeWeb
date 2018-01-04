@@ -1,22 +1,39 @@
 {include file="../application/index/view/header.html"}
 <div text-align=margin>
 	<div class = "box" style="margin: 0 auto;margin-top: 50px;margin-bottom: 50px;width:400px;">
-		<div>
-			<div style = "height:100px;width:400px;text-align:center">
-				<img  id="show" src="http://localhost/uploads/{$user_info.avatar}" style = "height:100px;width:100px;margin:auto"/>
+		<form action = "{:url('update')}" onsubmit="return check()" enctype="multipart/form-data" method="post">
+			<div style = "height:100px;width:400px;">
+				<img  id="show" src="http://localhost/uploads/{$user_info.avatar}" style = "height:100px;width:100px;margin:auto;float:right"/>
+				<div style = "width:calc(100% - 100px);height:100px;float:left;position:relative;">
+					<input type="file" name="avatar" id="avatar" onchange="avatarChange()" 
+					style = "position: absolute;bottom: calc(50% - 13px); " />
+				</div>
 			</div>
 			<div class="form-group " style="margin-top: 30px;text-align:center">
 				<label>用户名</label>
-				<input type = "text" name = "user_name" id = "user_name" class="form-control" value={$user_info.user_name}></input>
+				<div type = "text" name = "user_name" id = "user_name" class="form-control">{$user_info.user_name}</div>
 			</div class="form-group">
 			<div class="form-group" style="text-align:center">
 				<label>座右铭</label>
-				<input type = "text" name = "user_pwd" id = "motto" class="form-control" value="程序员不打代码"></input>
+				<input type = "text" name = "user_motto" id = "motto" class="form-control" value={$user_info.user_motto}></input>
 			</div class="form-group">
 			<div style = "text-align:center">
 				<button type = "submit" style = "width:30%">修改个人信息</button>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
+		<script type="text/javascript">
+			function avatarChange () {
+				var r= new FileReader();
+				var imgURL = "";
+				f=document.getElementById('avatar').files[0];
+				r.readAsDataURL(f);
+				r.onload=function  (e) {
+					imgURL = this.result;
+					document.getElementById('show').src=this.result;
+				};
+				var uname = document.getElementById("user_name").value
+			}
+		</script>
 {include file="../application/index/view/footer.html"}

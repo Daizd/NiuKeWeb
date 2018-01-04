@@ -58,11 +58,11 @@ class UserManage extends \think\Controller
 		if($file){
 			$info = $file->validate(['ext'=>'jpg,png','size'=>2*1024*1024])->move('../../uploads');
 			if(!$info){
-				$this->error ("头像仅支持jpg,png。且不能大于5M");
+				$this->error ("头像仅支持jpg,png。且不能大于2M");
 			}
 			$data['avatar'] = $info->getSaveName();
 		} else {
-			$this->error ('请上传头像仅支持jpg,png。且不能大于5M');
+			$this->error ('请上传头像仅支持jpg,png。且不能大于2M');
 		}
 		unset($data['yzm']);//验证码不需要,释放掉
 		unset($data['user_repwd']);
@@ -84,5 +84,36 @@ class UserManage extends \think\Controller
 		$uinfo = Session::get('uinfo');
 		$this->assign('user_info',$uinfo);
 		return $this->fetch();
+	}
+	
+	public function update(){
+		$data = request()->param();
+		$file = request()->file("avatar");
+		if($file){
+			$info = $file->validate(['ext'=>'jpg,png','size'=>2*1024*1024])->move('../../uploads');
+			if(!$info){
+				$this->error ("头像仅支持jpg,png。且不能大于2M");
+			}
+			$data['avatar'] = $info->getSaveName();
+		} else {
+			$this->error ('请上传头像仅支持jpg,png。且不能大于2M');
+		}
+		
+		$uinfo = Session::get('uinfo');
+		db('user')-> where("u_id", $uinfo['u_id'])
+					->update(['avatar'=>$data['avatar']]);
+		db('user')-> where("u_id", $uinfo['u_id'])
+					->update(['user_motto'=>$data['user_motto']]);
+		
+		$info =  db('user')
+					->where("u_id", $uinfo['u_id'])
+					->find();
+        if (empty($info)) {
+            $this->error('session设置失败！');
+        }else{
+            Session::set('uinfo',$info);
+            $this->success('修改成功', 'index/home');
+        }
+	
 	}
 }
