@@ -1,0 +1,25 @@
+{include file="header1"}
+<div class="container" style="background-color: white;padding-top: 20px">
+    <div class="queueBox">
+        <ul class="queueList">
+           {foreach $infos as $lists}
+      
+            <li class="queue_ist">
+                <h6 class="question_title">{$lists.description}</h6>
+                <img  class="question_img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515033894261&di=1d115b62d84a521d74cf1ee4fec795cf&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F38%2F52%2F07s58PICpmG_1024.jpg" alt="">
+                <p class="heat">热度指数： {$lists.hot}</p>
+                <div class="check">
+                    <p class="total">共{$lists.number}道题</p>
+                    <input type="button" class="btn btn-success check_btn" value="查看详情">
+                </div>
+            </li>
+            {/foreach}
+            
+
+        </ul>
+    </div>
+</div>
+
+
+
+{include file="footer"}

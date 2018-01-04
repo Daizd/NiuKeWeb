@@ -14,13 +14,22 @@ use think\Controller;
 class QuestionBank extends Controller
 {
     function questionBank(){
-
+    	$list1=db('direction')->select();
+        $this->assign('new_list1',$list1);
+        $list2=db('company')->select();
+        $this->assign('new_list2',$list2);
         return $this->fetch();
     }
-    function getdata(){
-        $data =  input("allcity");
+     public function update()
+    {	
 
-        printf($data['name']);
-        return;
-    }
+		$info=db('questionBank')->where("direction",input('direction'))->select();
+        // print_r($info);exit();
+		$this->assign('infos',$info);
+		$list1=db('direction')->select();
+        $this->assign('new_list1',$list1);
+        $list2=db('company')->select();
+        $this->assign('new_list2',$list2);
+		return $this->fetch();
+	}
 }
