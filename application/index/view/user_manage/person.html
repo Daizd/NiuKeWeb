@@ -1,0 +1,22 @@
+{include file="../application/index/view/header.html"}
+<div text-align=margin>
+	<div class = "box" style="margin: 0 auto;margin-top: 50px;margin-bottom: 50px;width:400px;">
+		<div>
+			<div style = "height:100px;width:400px;text-align:center">
+				<img  id="show" src="http://localhost/uploads/{$user_info.avatar}" style = "height:100px;width:100px;margin:auto"/>
+			</div>
+			<div class="form-group " style="margin-top: 30px;text-align:center">
+				<label>用户名</label>
+				<input type = "text" name = "user_name" id = "user_name" class="form-control" value={$user_info.user_name}></input>
+			</div class="form-group">
+			<div class="form-group" style="text-align:center">
+				<label>座右铭</label>
+				<input type = "text" name = "user_pwd" id = "motto" class="form-control" value="程序员不打代码"></input>
+			</div class="form-group">
+			<div style = "text-align:center">
+				<button type = "submit" style = "width:30%">修改个人信息</button>
+			</div>
+		</div>
+	</div>
+</div>
+{include file="../application/index/view/footer.html"}

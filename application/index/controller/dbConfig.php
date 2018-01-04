@@ -49,6 +49,7 @@ function initDB_M(){
 			u_id int PRIMARY KEY AUTO_INCREMENT,
 			user_name varchar(20) NOT NULL,
 			user_pwd varchar(20),
+			user_motto varchar(100),
 			avatar varchar(50)
 		)";
 		if (mysqli_query($con, $sql)){
@@ -56,7 +57,7 @@ function initDB_M(){
 		} else {
 			echo "创建数据表". TABLE_USER_M ."错误: " . mysqli_error($con ."<br/>"); 
 		}
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_USER_M. "(user_name, user_pwd) VALUE('test', '123')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_USER_M. "(user_name, user_pwd, user_motto) VALUE('test', '123', '程序员不打代码')" );
 		if (!$result){
 			die (TABLE_USER_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}

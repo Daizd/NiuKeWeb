@@ -79,4 +79,10 @@ class UserManage extends \think\Controller
             $this->success('已经自动登录', 'index/home');
         }
 	}
+	
+	public function person(){
+		$uinfo = Session::get('uinfo');
+		$this->assign('user_info',$uinfo);
+		return $this->fetch();
+	}
 }
