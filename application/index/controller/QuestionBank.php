@@ -14,6 +14,13 @@ use think\Controller;
 class QuestionBank extends Controller
 {
     function questionBank(){
+
         return $this->fetch();
+    }
+    function getdata(){
+        $data =  input("allcity");
+
+        printf($data['name']);
+        return;
     }
 }
