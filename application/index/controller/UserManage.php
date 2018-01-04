@@ -62,7 +62,7 @@ class UserManage extends \think\Controller
 			}
 			$data['avatar'] = $info->getSaveName();
 		} else {
-			$this->error ('请上传头像仅支持jpg,png。且不能大于2M');
+			$this->error ('请上传头像(头像仅支持jpg,png。且不能大于2M)');
 		}
 		unset($data['yzm']);//验证码不需要,释放掉
 		unset($data['user_repwd']);
@@ -96,7 +96,7 @@ class UserManage extends \think\Controller
 			}
 			$data['avatar'] = $info->getSaveName();
 		} else {
-			$this->error ('请上传头像仅支持jpg,png。且不能大于2M');
+			$this->error ('请上传头像(头像仅支持jpg,png。且不能大于2M)');
 		}
 		
 		$uinfo = Session::get('uinfo');
