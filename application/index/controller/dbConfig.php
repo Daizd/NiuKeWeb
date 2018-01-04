@@ -84,16 +84,16 @@ function initDB_M(){
 		} else {
 			echo "创建数据表". TABLE_COURSE_M ."错误: " . mysqli_error($con)."<br/>";  
 		}
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) 
-		VALUE('java', 'TOM','java从入门到放弃', 2017)" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher,course_thumb, course_content, c_create_time) 
+		VALUE('java', 'TOM','20180104/bae984068da2456c0b4e0f7928ffb19f.jpg','java从入门到放弃', 2017)" );
 		if (!$result){
 			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
-        $result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) VALUE('c++', 'KITTY','c++从入门到转行',2017)" );
+        $result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher,course_thumb, course_content, c_create_time) VALUE('c++', 'KITTY','20180104/311f5726784f724e19cddef282149521.jpg','c++从入门到转行',2017)" );
         if (!$result){
 			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher, course_content, c_create_time) VALUE('php', 'TONY','php从入门到脱发',2017)" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COURSE_M. "(course_name, course_teacher,course_thumb, course_content, c_create_time) VALUE('php', 'TONY','20180104/5756b8d73d5899abdc72d6e4d3c7208a.jpg','php从入门到脱发',2017)" );
 		if (!$result){
 			die (TABLE_COURSE_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
