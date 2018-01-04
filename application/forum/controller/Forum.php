@@ -9,7 +9,7 @@ class Forum extends \think\Controller
 	
 		$list = db('post')
 				->alias('p')
-				->field('p.post_id, p.post_title, c.cat_name')
+				->field('p.post_id, p.post_heat, p.post_title, c.cat_name')
 				->order('p.post_heat desc')
 				->join('post_category c','p.post_cat_id = c.cat_id')
 				->paginate(10);
