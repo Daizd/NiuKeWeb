@@ -10,6 +10,9 @@ define("TABLE_POST_M", "niu_ke_post");//帖子表，
 define("TABLE_POST_CATEGORY_M", "niu_ke_post_category");//帖子类别表，
 define("TABLE_COURSE_M", "niu_ke_course");//课程类别表，
 define("TABLE_QUESTION_BANK_M", "niu_ke_question_bank");
+define("TABLE_DIRECTION_M", "niu_ke_direction");
+define("TABLE_COMPANY_M", "niu_ke_company");
+
 function initDB_M(){
 	$con = mysqli_connect(DB_HOST_M, DB_USER_NAME_M, DB_USER_PWD_M); 
 	if (mysqli_connect_errno($con)) 
@@ -184,6 +187,8 @@ function initDB_M(){
 			direction varchar(255) ,
 			company varchar(255),
 			date int,
+			hot int,
+			number int,
 			description varchar(255),
 			question_content varchar(255)
 			
@@ -193,62 +198,132 @@ function initDB_M(){
 		} else {
 			echo "创建数据表". TABLE_QUESTION_BANK_M ."错误: " . mysqli_error($con)."<br/>"; 
 		}
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('前端', '腾讯', 2017, '腾讯2017校招前端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number,description) 
+		VALUE('前端', '腾讯', 2017, 183,15,'腾讯2017校招前端笔试题')" );
 		if (!$result){
 			die (TABLE_QUESTION_BANK_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '腾讯', 2017, '腾讯2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '微软', 2017, '微软2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '迅雷', 2017, '迅雷2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', 'YY', 2017, 'YY2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '腾讯', 2016, '腾讯2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '微软', 2016, '微软2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', '迅雷', 2016, '迅雷2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('后端', 'YY', 2016, 'YY2017校招后端笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '腾讯', 2017, '腾讯2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '微软', 2017, '微软2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '迅雷', 2017, '迅雷2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', 'YY', 2017, 'YY2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '腾讯', 2016, '腾讯2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '微软', 2016, '微软2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', '迅雷', 2016, '迅雷2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('java', 'YY', 2016, 'YY2017校招java笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '腾讯', 2017, '腾讯2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '微软', 2017, '微软2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '迅雷', 2017, '迅雷2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', 'YY', 2017, 'YY2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '腾讯', 2016, '腾讯2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '微软', 2016, '微软2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', '迅雷', 2016, '迅雷2017校招测试笔试题')" );
-		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, description) 
-		VALUE('测试', 'YY', 2016, 'YY2017校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('后端', '腾讯', 2017,120,25, '腾讯2017校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('后端', '微软', 2017,1203,14, '微软2017校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('后端', '迅雷', 2017, 123,17,'迅雷2017校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('后端', 'YY', 2017,120,14, 'YY2017校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('后端', '腾讯', 2016,13,18, '腾讯2017校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('后端', '微软', 2016,120,19, '微软2016校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('后端', '迅雷', 2016, 253,15,'迅雷2016校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('后端', 'YY', 2016,1230,15, 'YY2016校招后端笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number,description) 
+		VALUE('java', '腾讯', 2017,1673,18, '腾讯2017校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('java', '微软', 2017,123,15, '微软2017校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('java', '迅雷', 2017,103,20, '迅雷2017校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('java', 'YY', 2017, 123,15,'YY2017校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number,description) 
+		VALUE('java', '腾讯', 2016,193,19, '腾讯2016校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('java', '微软', 2016,13,25, '微软2016校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('java', '迅雷', 2016,100,15, '迅雷2016校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('java', 'YY', 2016,223,9, 'YY2017校招java笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('测试', '腾讯', 2017,12,15, '腾讯2017校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number,description) 
+		VALUE('测试', '微软', 2017, 1213,15,'微软2017校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('测试', '迅雷', 2017,1223,15, '迅雷2017校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number,description) 
+		VALUE('测试', 'YY', 2017, 123,18,'YY2017校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('测试', '腾讯', 2016,13,15, '腾讯2016校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('测试', '微软', 2016, 23,15,'微软2016校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date, hot,number, description) 
+		VALUE('测试', '迅雷', 2016, 193,10,'迅雷2016校招测试笔试题')" );
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_QUESTION_BANK_M. "(direction, company, date,  hot,number,description) 
+		VALUE('测试', 'YY', 2016, 123,12,'YY2016校招测试笔试题')" );
 	}
 	
 	
+	
+	$result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_COMPANY_M."'");
+	if (mysqli_num_rows($result) == 0){
+		$sql = "CREATE TABLE " . TABLE_COMPANY_M .
+		"(
+			id int PRIMARY KEY AUTO_INCREMENT,
+			name varchar(255)
+			
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
+		if (mysqli_query($con, $sql)){
+			echo "数据表 ". TABLE_COMPANY_M ." 创建成功<br/>";
+		} else {
+			echo "创建数据表". TABLE_COMPANY_M ."错误: " . mysqli_error($con)."<br/>"; 
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COMPANY_M. "(name) 
+		VALUE( '腾讯')" );
+		if (!$result){
+			die (TABLE_COMPANY_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+	    $result = mysqli_query($con, "INSERT INTO " .TABLE_COMPANY_M. "(name) 
+		VALUE( '迅雷')" );
+		if (!$result){
+			die (TABLE_COMPANY_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+         $result = mysqli_query($con, "INSERT INTO " .TABLE_COMPANY_M. "(name) 
+		VALUE( 'YY')" );
+		if (!$result){
+			die (TABLE_COMPANY_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_COMPANY_M. "(name) 
+		VALUE( '微软')" );
+		if (!$result){
+			die (TABLE_COMPANY_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+}
+        
+	   $result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_DIRECTION_M."'");
+	   if (mysqli_num_rows($result) == 0){
+		$sql = "CREATE TABLE " . TABLE_DIRECTION_M .
+		"(
+			id int PRIMARY KEY AUTO_INCREMENT,
+		    name  varchar(255)
+			
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
+		if (mysqli_query($con, $sql)){
+			echo "数据表 ". TABLE_DIRECTION_M ." 创建成功<br/>";
+		} else {
+			echo "创建数据表". TABLE_DIRECTION_M ."错误: " . mysqli_error($con)."<br/>"; 
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_DIRECTION_M. "(name) 
+		VALUE('前端')" );
+		if (!$result){
+			die (TABLE_DIRECTION_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_DIRECTION_M. "(name) 
+		VALUE('后端')" );
+		if (!$result){
+			die (TABLE_DIRECTION_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_DIRECTION_M. "(name) 
+		VALUE('Java')" );
+		if (!$result){
+			die (TABLE_DIRECTION_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+		$result = mysqli_query($con, "INSERT INTO " .TABLE_DIRECTION_M. "(name) 
+		VALUE('测试')" );
+		if (!$result){
+			die (TABLE_DIRECTION_M."表数据插入失败! ". mysqli_error($con)."<br/>");
+		}
+}
 	
 
 	mysqli_close($con);
