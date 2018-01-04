@@ -51,30 +51,11 @@
         <div class="col-md-4">
             <div class="recommend_article">精品文章</div>
             <ul class="recommend_list">
-                <!--foreach $article_list as $info-->
+                {foreach $recommend_article_list as $info}
                 <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
+                    <a  class="link" href="{:url('../forum/forum/preview',['post_id'=>$info.post_id])}" >{$info.post_content}</a>
                 </li>
-                <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-                <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-                <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-                <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-                <li>
-                    <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-                <li>
-                <a  class="link" href="#" >怎么获取表单传过来的信息怎么获取表单传过来的信息</a>
-                </li>
-
-                <!--{/foreach}-->
+                {/foreach}
             </ul>
         </div>
     </div>
@@ -180,12 +161,14 @@
     <div class="row">
         <div class="col-md-8">
             <h4 class="heat_article">热门文章</h4>
+
             <ul class="article_list">
+                {foreach $heat_article_list as $info}
                 <li>
                     <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="img">
                     <div class="article_description">
-                        <a href="#" class="article_title">Android Paging Library按页获取网络数据实例</a>
-                        <p class="article">新的 Paging Library 新的 Paging Library 成为了 Architecture Components 的一部分。虽然现在还是alpha阶段成为了 Architecture Components 的一部分。虽然现在还是alpha阶段，但是无疑你已经开始准备尝试了！我不准备全去讲它的用法，因为本文只是对 Chris Craik 这篇文章 的补充。 因为官方的示例第一眼看上去好像它只能跟 Room 一起</p>
+                        <a href="{:url('../forum/forum/preview',['post_id'=>$info.post_id])}" class="article_title">{$info.post_title}</a>
+                        <p class="article">{$info.post_content}</p>
                         <div class="list_msg">
                             <ul>
                                 <li class="list-user">
@@ -212,72 +195,7 @@
                         </div>
                     </div>
                 </li>
-
-                <li>
-                    <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="img">
-                    <div class="article_description">
-                        <a href="#" class="article_title">Android Paging Library按页获取网络数据实例</a>
-                        <p class="article">新的 Paging Library 新的 Paging Library 成为了 Architecture Components 的一部分。虽然现在还是alpha阶段成为了 Architecture Components 的一部分。虽然现在还是alpha阶段，但是无疑你已经开始准备尝试了！我不准备全去讲它的用法，因为本文只是对 Chris Craik 这篇文章 的补充。 因为官方的示例第一眼看上去好像它只能跟 Room 一起</p>
-                        <div class="list_msg">
-                            <ul>
-                                <li class="list-user">
-                                    <a href="#" target="_blank">
-                                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                                        <span>泡妞的日子</span>
-                                    </a>
-                                </li>
-                                <!--<li class="list-tag"><span><a href='/tags.php?/动画/' class='tag'>动画</a> </span></li> -->
-                                <li class="list-msg">
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">2407</span>
-                                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">1</span>
-                                    <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">16</span>
-                                </li>
-                                <li class="update_time">
-                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">17-11-03</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <img src="https://img1.mukewang.com/szimg/5a16336900014ca405400300.jpg" alt="" class="img">
-                    <div class="article_description">
-                        <a href="#" class="article_title">Android Paging Library按页获取网络数据实例</a>
-                        <p class="article">新的 Paging Library 新的 Paging Library 成为了 Architecture Components 的一部分。虽然现在还是alpha阶段成为了 Architecture Components 的一部分。虽然现在还是alpha阶段，但是无疑你已经开始准备尝试了！我不准备全去讲它的用法，因为本文只是对 Chris Craik 这篇文章 的补充。 因为官方的示例第一眼看上去好像它只能跟 Room 一起</p>
-                        <div class="list_msg">
-                            <ul>
-                                <li class="list-user">
-                                    <a href="#" target="_blank">
-                                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                                        <span>泡妞的日子</span>
-                                    </a>
-                                </li>
-                                <!--<li class="list-tag"><span><a href='/tags.php?/动画/' class='tag'>动画</a> </span></li> -->
-                                <li class="list-msg">
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">2407</span>
-                                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">1</span>
-                                    <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">16</span>
-                                </li>
-                                <li class="update_time">
-                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                    <span class="glyphicon-class">17-11-03</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-
+                {/foreach}
             </ul>
         </div>
         <div class="col-md-4">
@@ -360,4 +278,5 @@
 <script>
     //导航栏的选中显示，请修改下面的这行代码，在自己负责的页面部分，写入响应的id
     $('#home').addClass("active");
+
 </script>

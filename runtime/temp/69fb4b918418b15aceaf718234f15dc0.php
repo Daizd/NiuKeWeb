@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp64\www\niuke\public/../application/index\view\index\home.html";i:1514985732;s:54:"D:\wamp64\www\niuke\application\index\view\header.html";i:1514989431;s:54:"D:\wamp64\www\niuke\application\index\view\footer.html";i:1514978686;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp64\www\niuke\public/../application/index\view\index\home.html";i:1514996733;s:54:"D:\wamp64\www\niuke\application\index\view\header.html";i:1514996938;s:54:"D:\wamp64\www\niuke\application\index\view\footer.html";i:1514962838;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +63,7 @@
                                 <li><i class="fa fa-envelope" aria-hidden="true" style=""></i>&nbsp;&nbsp;个人主页</li>
                                 <li><i class="fa fa-envelope" aria-hidden="true" style=""></i>&nbsp;&nbsp;账号设置</li>
                                 <li><i class="fa fa-envelope" aria-hidden="true" style=""></i>&nbsp;&nbsp;我的文章</li>
-                                <li><i class="fa fa-envelope" aria-hidden="true" style=""></i>&nbsp;&nbsp;退出登陆</li>
+                                <li id="logout"><i class="fa fa-envelope" aria-hidden="true" style=""></i>&nbsp;&nbsp;退出登陆</li>
                             </ul>
                         </div>
                     </li>
@@ -84,6 +84,12 @@
         </div>
     </nav>
 </section>
+<script type="text/javascript">
+    $('#logout').click(function () {
+        console.log("点击了退出登陆");
+        window.location.href = "../user_manage/login";
+    })
+</script>
 
 <!--正文内容-->
 <link rel="stylesheet" href="_PUBLIC_/static/index/css/home.css">
@@ -486,4 +492,5 @@
 <script>
     //导航栏的选中显示，请修改下面的这行代码，在自己负责的页面部分，写入响应的id
     $('#home').addClass("active");
+
 </script>

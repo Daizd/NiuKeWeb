@@ -145,12 +145,36 @@ function initDB_M(){
 		if (!$result){
 			die (TABLE_POST_M."表数据插入失败! ". mysqli_error($con)."<br/>");
 		}
-		for ($i=0; $i<100; $i++) {
-			$n = ($i)%5+1;
-			mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
-				VALUE('test', 'test', 1, " .$n. ", " .time(). ")");
-		} 
-	}
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('正式发布 Android 架构组件 1.0 稳定版 | 附带中文介绍视频', '几十亿的设备都在用 Android 系统，从高端手机到飞机上的影音娱乐系统，应有尽有，不一而足。而 Android OS 则为这几十亿的设备保驾护航，高效管理资源，保障运行流畅，然而有时候却增加了开发卓越 App 的难度。为了简化开发流程，我们在 Google ', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('仿写Social Steps的ToolBar效果', '广州大学的学生竟然都不打游戏', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('调用系统相机、相册、剪裁图片并上传（常用于上传头像，兼容Android7.0）', '前段时间在medium上看到一篇比较有意思的文章 Toolbar Delight 。该篇文章讲解了如何实现下面这种效果： gif效果不好，想看清晰的版本请看原始文章的视频。 文章虽好，但是代码不全，有些细节作者其实也没有透露。于是我大致看了之后决定自己实现', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('设置点击效果foreground..', 'Hansion的博客 由于在Android采用了StrictMode API政策禁，其中有一条限制就是对目录访问的限制。 这项变更意味着我们无法通过File API访问手机存储上的数据，也就是说，给其他应用传递 file:// URI 类型的Uri，可能会导致接受者无法访问该路径，并且会', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('相机、相册、剪裁图片并上传..', 'android:foreground 最近一段时间研究了一下 plaid ，想学习一下material design。 这里记录一下view的 background 和 foreground 。 平时的话我们设置点击效果，为了简便，大多数人应该都会使用 android:background=\"@drawable/selecterDrawable\"//或', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('Constraint Layout 1.1.x带来了哪些新东西？..', '今年的 Google I/O 上谷歌发布了新版本的ConstraintLayout，但是我们并没有从中得到多少信息，只有一篇非常简陋的 博客 。 那么到底是哪些新特性，它们的功能和用法又是怎么回事呢？ Percent Dimensions 说到Percent Dimensions就不得不说', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('ConstraintLayout之Barrier..', '加快apk的构建速度，如何把编译时间从130秒降到17秒(二)在上一篇文章 加快apk的构建速度，如何把编译时间从130秒降到17秒 中讲了优化的思路与初步的实现，经过一段时间的优化性能和稳定性都有很大的提高，这里要感谢大家提的建议以及 github 上的 issue ，这篇文章就把主要优化的点和新功能以及填的坑介', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('从概念设计到安卓实现, 第二部分（译）..', '自从上一篇文章发布之后已经有一段时日了，虽然期间经历了很多事情，但是最终还是来了，希望你们依旧喜欢！ 这是我的“从设计到android”系列的新篇，如果你记得这个系列的 第一部分 ，就应该知道当时我选了一个有趣的概念设计，并尝试在Android 上', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('高仿掘金App —— 基于 databinding..', '项目初衷 不同于前端 vue、 react 的火热, 移动端的 databinding 好像不受待见。鉴于 vue、 react 都有各自成熟的生态圈，我希望通过这个项目打磨出一个简单易用的 databinding 组件库 。 1.1 ', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('Android Paging Library按页获取网络数据实例..', '新的 Paging Library 成为了 Architecture Components 的一部分。虽然现在还是alpha阶段，但是无疑你已经开始准备尝试了！我不准备全去讲它的用法，因为本文只是对 Chris Craik 这篇文章 的补充。 因为官方的示例第一眼看上去好像它只能跟 Room 一起', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('为什么要使用ItemDecoration系列之不要添加view来做分割线..', '首先，什么是ItemDecoration？来看看官网是如何解释的。 An ItemDecoration allows the application to add a special drawing and layout offset to specific item views from the adapter’s data set. This can be useful for drawing dividers between i', 1, 1, 123)" );
+        mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+		VALUE('《Effective Java》可能在哪些方面影响了 Kotlin 的设计？..', '在重读《Effective Java》时，我发现其中的很多内容对Kotlin来说已经用不着了，所以产生了一个想法，想探讨一下这本书是否影响了Kotlin的设计。', 1, 1, 123)" );
+        for ($i=0; $i<100; $i++) {
+            $n = ($i)%5+1;
+            mysqli_query($con, "INSERT INTO " .TABLE_POST_M. "(post_title, post_content, post_heat, post_cat_id, create_time) 
+				VALUE('Effective Java', '【Android】非 recreate() 形式的夜间模式实现（自由切换，不改变任何状态，不重新初始化整个activity）', 1, " .$n. ", " .time(). ")");
+        }
+    }
 
 	$result = mysqli_query($con, "SHOW TABLES LIKE '". TABLE_QUESTION_BANK_M."'");
 	if (mysqli_num_rows($result) == 0){
